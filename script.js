@@ -74,7 +74,7 @@ function checkAnswer(selected, correct, steps) {
 
   if (selected === correct) {
     position += steps;
-    if (position > finish) position = finish;
+    if (position > finish) position = finish; // 
     message.textContent = ` Correct! You moved ${steps} steps forward.`;
   } else {
     lives--;
@@ -92,15 +92,15 @@ function checkAnswer(selected, correct, steps) {
   } else if (position >= finish) {
     message.textContent += " You reached the Mars Base!";
     rollBtn.disabled = true;
-    continueBtn.classList.add("hidden");
+    continueBtn.classList.add("hidden"); //hides continue button
   } else {
-    continueBtn.classList.remove("hidden");
+    continueBtn.classList.remove("hidden"); //shows continue button until
   }
 }
 
 //event listener for button
 continueBtn.addEventListener("click", () => {
   message.textContent = "Roll the dice for your next move!";
-  rollBtn.classList.remove("hidden"); 
-  continueBtn.classList.add("hidden");
+  rollBtn.classList.remove("hidden");  //shoes roll button
+  continueBtn.classList.add("hidden"); //hides continue button 
 });

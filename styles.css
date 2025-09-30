@@ -35,16 +35,18 @@ button {
   font-weight: bold;
   color: #000;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 button:hover {
 	background-color: #ff5722;
+  transform: scale(1);
 }
 
 .hidden {
   display: none;
 }
+
+#status p {margin-bottom: 0.5rem;}
 
 #track {
   display: flex;
@@ -65,6 +67,20 @@ button:hover {
 .step.player {
   background: #ff7043;
   box-shadow: 0 0 10px #ff7043;
+}
+
+#choices button {
+  display: block;
+  margin: 0.5rem auto;
+  background: #ffd966;
+}
+
+#message { margin-top: 1rem; font-size: 1.1rem; }
+
+footer {
+  background: rgba(139,0,0,0.8);
+  padding: 0.5rem;
+  color: #ffe066;
 }
 
 footer {

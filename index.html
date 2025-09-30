@@ -4,20 +4,36 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<title>Mars exploration</title>
+		<title>Mars Adventure Game</title>
 	</head>
 	<body>
 		<header>
-        <h1 id="celestial-name"> Mars exploration </h1>
+        <h1 id="celestial-name"> Mars Adventure </h1>
+        <p>Get to Mars before running out of lives</p>
     </header>
 
     <main>
-      <section id="celestial-info">
-        <!-- The description paragraph and list will be added here dynamically -->
-      </section>
+      <div id="status">
+        <p>Lives: <span id="lives">3</span></p>
+        <p>Position: <span id="position"></span></p>
+      </div>
 
-      <button id="reveal-btn">Reveal Space Fact</button>
-      <p id="space-fact" style="display:none;"></p>
+      <div id="track">
+        <!-- Javascript will parse here-->
+      </div>
+
+      <div id="question-container" class="hidden">
+        <p id="question"></p>
+        <div id="choices"></div>
+
+      </div>
+
+      <div id="message"></div>
+      <button id="continueBtn" class="hidden">Continue</button>
+      
+      <footer>
+        <p>Mars Adventure Game</p>
+      </footer>
     </main>
 
     <script src="script.js"></script>

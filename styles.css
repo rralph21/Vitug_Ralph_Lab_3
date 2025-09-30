@@ -1,12 +1,13 @@
 body {
 	font-family: "Arial", sans-serif;
+  color: salmon;
 	margin: 0;
 	padding: 0;
 	background-color: #f4f4f4;
-	color: #333;
+  text-align: center;
 }
 
-header h1 {
+header {
 	background-color: #333;
 	color: #ec4343;
 	padding: 0.625em 1.25em;
@@ -25,14 +26,49 @@ main {
 }
 
 button {
-	padding: 0.625em 0.9375em;
-	background-color: #008cba;
-	color: white;
-	border: none;
-	cursor: pointer;
+	background: #ff7043;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 button:hover {
-	background-color: #005f73;
+	background-color: #ff5722;
 }
 
+.hidden {
+  display: none;
+}
+
+#track {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 5px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  background-color: #ec4343;
+  border: 1px solid salmon;
+  border-radius: 4px;
+  position: relative;
+}
+
+.step.player {
+  background: #ff7043;
+  box-shadow: 0 0 10px #ff7043;
+}
+
+footer {
+  background-color: rgba(139,0,0,0.8);
+  padding: 0.5rem;
+  color: #ffe066;
+}
